@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
 const clouds = document.querySelector('.clouds')
 const score = document.querySelector('.score')
+var numero = 0
 
 const jump = () => {
   mario.classList.add('jump')
@@ -34,10 +35,9 @@ const loop = setInterval(() => {
 
     clearInterval(loop);
   }
-  if (pipePosition == 0) {
-    for (let numero = 0; numero < 100; numero++) {
-      score.innerHTML = `Score: ${numero}`
-    }
+  if (pipePosition <= 139 && pipePosition >= 130) {
+    numero++
+    score.innerHTML = `Score: ${numero}`
   }
 }, 10)
 
