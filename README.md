@@ -1,2 +1,2 @@
-# Jogo feito para divers~]ao e aprendizado :)
+# Jogo feito para diversão e aprendizado :)
  
